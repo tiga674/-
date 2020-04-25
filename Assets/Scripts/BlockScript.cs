@@ -23,6 +23,7 @@ public class BlockScript : MonoBehaviour
         if (collision.gameObject.tag == "floor")
         {
             renderer.material.color = Color.white;
+            this.tag = "floor";
         }
     }
 }
