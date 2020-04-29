@@ -692,8 +692,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e989499decb8a9c45bdbf782000d09b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockDrop1Interval: 5
-  block1: {fileID: 8273222524583967076, guid: d9420e4cce5fed24fb7cc0c57b36d2ee, type: 3}
+  blockDropInterval: 5
+  block1: {fileID: 6312151774179138776, guid: 262f94176a5b2c3499153571040497a4, type: 3}
+  block2: {fileID: 8273222524583967076, guid: d9420e4cce5fed24fb7cc0c57b36d2ee, type: 3}
 --- !u!4 &1369859754
 Transform:
   m_ObjectHideFlags: 0
