@@ -5,11 +5,11 @@ using UnityEngine.Rendering;
 
 public class BlockScript : MonoBehaviour
 {
-    Renderer renderer;
+    Renderer blockRenderer;
 
     void Start()
     {
-        renderer = GetComponent<Renderer>();
+        blockRenderer = GetComponent<Renderer>();
     }
 
     
@@ -22,7 +22,7 @@ public class BlockScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "floor")
         {
-            renderer.material.color = Color.white;
+            blockRenderer.material.color = Color.white;
             this.tag = "floor";
         }
     }
