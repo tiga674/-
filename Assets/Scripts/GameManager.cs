@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -93,5 +94,10 @@ public class GameManager : MonoBehaviour
             blockDropInterval -= 2;
             gameLevel3Reject = true;
         }
+    }
+
+    public void titleButtonClick()
+    {
+        SceneManager.LoadScene("TitleScene");
     }
 }

@@ -10,6 +10,7 @@ public class PlayerScript : MonoBehaviour
     private AudioSource clearSound;
 
     public Text stateText;
+    public GameObject titleButton;
     public GameObject gameManager;
     public GameObject mainCamera;
     public GameObject SE;
@@ -29,6 +30,7 @@ public class PlayerScript : MonoBehaviour
             Destroy(this.gameObject);
             cameraScript.enabled = false;
             stateText.text = "GameOver!!";
+            titleButton.SetActive(true);
         }
     }
 
@@ -41,6 +43,7 @@ public class PlayerScript : MonoBehaviour
             Destroy(this.gameObject);
             cameraScript.enabled = false;
             stateText.text = "GameClear!!";
+            titleButton.SetActive(true);
         }
     }
 }
